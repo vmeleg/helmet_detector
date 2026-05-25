@@ -12,7 +12,7 @@ from datetime import datetime
 # CARGAR MODELO YOLO
 # ========================
 modelp = YOLO("yolov8n.pt")
-modelh = YOLO("best2.pt")
+modelh = YOLO("best50.pt")
 
 # ========================
 # CONFIGURACIÓN SERIAL
@@ -147,7 +147,7 @@ def dibujar_hud(frame):
         (1150, 100),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.6,
-        COLOR_SECUNDARIO,
+        COLOR_PRINCIPAL,
         2
     )
 
